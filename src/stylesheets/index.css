@@ -38,5 +38,8 @@ img {
   min-height: 100vh;
   min-width: 100vw;
 }
+.App .card-icon svg {
+  transform: scale(20);
+}
 
 /*# sourceMappingURL=index.css.map */

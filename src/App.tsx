@@ -16,6 +16,10 @@ function App() {
 				There are {unshuffledDeck.length} cards in the unshuffled deck
 			</p>
 			<p>There are {curDeck.length} cards in the shuffled deck</p>
+			<p>The top card is:</p>
+			<div className="card-icon" style={{ height: "500px" }}>
+				{curDeck[0].icon}
+			</div>
 		</div>
 	);
 }
