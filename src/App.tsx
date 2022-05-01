@@ -2,6 +2,7 @@ import React, { useState, ReactElement, ReactNode, useEffect } from "react";
 import "./stylesheets/index.css";
 import { Card, Deck, Player, unshuffledDeck } from "./Deck";
 import arrayShuffle from "array-shuffle";
+import Game from "./components/Game/Game";
 
 function App() {
 	const [currentDeck, setCurrentDeck] = useState<Deck>(() =>
@@ -33,7 +34,11 @@ function App() {
 	}, [inPlay]);
 	useEffect(() => {}, [numPlayers]);
 
-	return <div className="App"></div>;
+	return (
+		<div className="App">
+			<Game />
+		</div>
+	);
 }
 
 export default App;

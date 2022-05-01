@@ -1,25 +1,15 @@
 @use "reset" as *;
 @use "colors" as *;
+@use "game" as *;
 
 .App {
 	min-height: 100vh;
 	min-width: 100vw;
 
-	padding: 50px;
+	background: $black;
 
-	& .deal-button {
-		margin-bottom: 300px;
-	}
-
-	& .current-hand {
-		margin-bottom: 300px;
-
-		& .card {
-			margin-bottom: 50px;
-
-			& svg {
-				transform: scale(4);
-			}
-		}
-	}
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }

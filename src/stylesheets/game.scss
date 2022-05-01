@@ -1,0 +1,18 @@
+@use "colors" as *;
+@use "info-pane" as *;
+@use "pit" as *;
+
+.game {
+	background: $white;
+	height: 75vh;
+	width: 75vw;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+	align-items: center;
+
+	& > * {
+		height: 100%;
+	}
+}
