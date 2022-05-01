@@ -5,7 +5,21 @@
 	min-height: 100vh;
 	min-width: 100vw;
 
-	& .card-icon svg {
-		transform: scale(20);
+	padding: 50px;
+
+	& .deal-button {
+		margin-bottom: 300px;
+	}
+
+	& .current-hand {
+		margin-bottom: 300px;
+
+		& .card {
+			margin-bottom: 50px;
+
+			& svg {
+				transform: scale(4);
+			}
+		}
 	}
 }

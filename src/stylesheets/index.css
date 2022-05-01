@@ -37,9 +37,19 @@ img {
 .App {
   min-height: 100vh;
   min-width: 100vw;
+  padding: 50px;
 }
-.App .card-icon svg {
-  transform: scale(20);
+.App .deal-button {
+  margin-bottom: 300px;
+}
+.App .current-hand {
+  margin-bottom: 300px;
+}
+.App .current-hand .card {
+  margin-bottom: 50px;
+}
+.App .current-hand .card svg {
+  transform: scale(4);
 }
 
 /*# sourceMappingURL=index.css.map */
