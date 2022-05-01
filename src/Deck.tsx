@@ -6,7 +6,13 @@ export interface Card {
 	value: number;
 }
 
+export interface Player {
+	wealth: number;
+	hand: Card[];
+}
+
 export type Deck = Card[];
+export type Hand = Card[];
 
 export const unshuffledDeck: Deck = [
 	{
