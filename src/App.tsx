@@ -4,6 +4,9 @@ import { Card, Deck, Player, unshuffledDeck } from "./Deck";
 import arrayShuffle from "array-shuffle";
 import Game from "./components/Game/Game";
 
+import InfoPane from "./components/Game/InfoPane";
+import Pit from "./components/Game/Pit";
+
 function App() {
 	const [currentDeck, setCurrentDeck] = useState<Deck>(() =>
 		arrayShuffle(unshuffledDeck)
@@ -36,7 +39,15 @@ function App() {
 
 	return (
 		<div className="App">
-			<Game />
+			<div className="game">
+				<InfoPane
+					currentDeck={currentDeck}
+					players={players}
+					pot={pot}
+					inPlay={inPlay}
+				/>
+				<Pit />
+			</div>
 		</div>
 	);
 }

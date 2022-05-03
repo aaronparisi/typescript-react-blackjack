@@ -37,6 +37,50 @@ img {
 .info-pane {
   flex: 1 1 33%;
   border: 1px solid hotpink;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-pane > div {
+  width: 100%;
+}
+.info-pane .wealth-display {
+  border: 1px solid black;
+  flex: 1 1 10%;
+}
+.info-pane .betting-widget {
+  border: 1px solid orange;
+  flex: 1 1 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.info-pane .betting-widget input::-webkit-inner-spin-button, .info-pane .betting-widget input::-webkit-outer-spin-button {
+  opacity: 1;
+}
+.info-pane .pot-display {
+  border: 1px solid blue;
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.info-pane .game-control-panel {
+  border: 1px solid gray;
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.info-pane .game-control-panel .num-player-button {
+  flex: 1 1 45%;
+}
+.info-pane .game-control-panel .start-stop-button {
+  flex: 1 1 100%;
 }
 
 .pit {
